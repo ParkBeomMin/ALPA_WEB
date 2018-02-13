@@ -32,7 +32,8 @@
 
 	<header id="name">
 
-		<img id="headImg" src="/css/img/headImg.png"> <!-- 아무거나 넣었음 -->
+		<img id="headImg" src="/css/img/headImg.png">
+		<!-- 아무거나 넣었음 -->
 		<h1><a id="Logo" href="index.html">ALPA</a></h1>
 
 
@@ -43,7 +44,7 @@
 		<nav id="topMenu">
 			<ul>
 				<li class="topMenuLi">
-					<a class="menuLink">About us</a>
+					<a  class="menuLink">About us</a>
 					<ul class="submenu">
 						<li><a href="introduction.html" class="submenuLink">Introduction</a></li>
 						<li><a href="organization.html" class="submenuLink">Organization Chart</a></li>
@@ -53,7 +54,7 @@
 				</li>
 				<li>|</li>
 				<li class="topMenuLi">
-					<a class="menuLink">Notice</a>
+					<a  class="menuLink">Notice</a>
 					<ul class="submenu">
 						<li><a href="notice.html" class="submenuLink">Notice</a></li>
 						<li><a href="https://drive.google.com/drive/folders/0BwLt-eXTUGwAbmpmZ1BmekV6RTg" class="submenuLink">Accounting</a></li>
@@ -63,7 +64,7 @@
 				</li>
 				<li>|</li>
 				<li class="topMenuLi">
-					<a class="menuLink">Reference</a>
+					<a  class="menuLink">Reference</a>
 					<ul class="submenu">
 						<li><a href="project.html" class="submenuLink">Project</a></li>
 						<li><a href="seminar.html" class="submenuLink">Seminar</a></li>
@@ -72,12 +73,12 @@
 				</li>
 				<li>|</li>
 				<li class="topMenuLi">
-					<a class="menuLink">Community</a>
+					<a  class="menuLink">Community</a>
 					<ul class="submenu">
-						<li><a href="community.php?field=0" class="submenuLink">Anonymous</a></li>
-						<li><a href="community.php?field=1" class="submenuLink">Suggestion</a></li>
-						<li><a href="community.php?field=2" class="submenuLink">Class Tip</a></li>
-						<li><a href="community.php?field=3" class="submenuLink">Recruitment</a></li>
+						<li><a href="anonymous.php" class="submenuLink">Anonymous</a></li>
+						<li><a href="suggestion.php" class="submenuLink">Suggestion</a></li>
+						<li><a href="classtip.php" class="submenuLink">Class Tip</a></li>
+						<li><a href="recruitment.php" class="submenuLink">Recruitment</a></li>
 					</ul>
 				</li>
 				<li>|</li>
@@ -87,27 +88,13 @@
 			</ul>
 		</nav>
 
-		<div id="gSignInWrapper">
-			<span class="lable">Sign in:</span>
-			<div id="customBtn" class="customGPlusSignIn">
-				<span class="icon"></span>
-				<span class="btnText">Google</span>
-			</div>
-			<script>
-				startApp();
-			</script>
 
-			<div class="data">
-				<img id="pic" class="img-circle" width="100" height="100">
 
-				<p id="email" class="alert alert-danger"></p>
-				<button onclick="signOut()" class="btn btn-danger">SignOut</button>
-			</div>
 
-		</div>
-		
-
-	</div>
+		<div id="content">
+			<div id="instaPics"></div>			
+			<script src="/js/gallery.js"></script>
+			<link rel="stylesheet" type="text/css" href="/css/gallery.css">
 
 
 </body>
